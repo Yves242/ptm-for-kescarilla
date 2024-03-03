@@ -4,7 +4,7 @@ Welcome to the `Session Codes` directory! This space is dedicated to organizing 
 
 ## Sessions
 Recursion, Pointers and Parameter Passing
-- **[Session 1](https://github.com/Yves242/ptm-for-kescarilla/tree/main/codes/Session%201%3A%20Recursion%2C%20Pointers%20and%20Parameter%20Passing) (March 4, 2024): Recursion, Pointers and Parameter Passing** 
+- **[Session 1](https://github.com/Yves242/ptm-for-kescarilla/tree/main/codes/Session%201%3A%20Recursion) (March 4, 2024): Recursion, Pointers and Parameter Passing** 
 
 ## Running Instructions
 
