@@ -8,6 +8,7 @@
 # Flag to track if the script has already run
 script_run=false
 
+# main function
 select_file() {
     # Check if the script has already run
     if [ "$script_run" = true ]; then
@@ -33,6 +34,7 @@ select_file() {
         choices+=("$base_filename")
     done < <(find . -type f -name "*.c" -print0)
     
+    # add last choice for quitting/exiting
     choices+=("Quit/Exit")
 
     # switch-case for choice
@@ -75,12 +77,16 @@ compile_and_run() {
     if [ $? -eq 0 ]; then
                 
         # print notifications
+        echo ""
         echo $'—————————————————————————————————————————————————'
         echo $'Dynamic compilation successful. Running program.'
         echo $'—————————————————————————————————————————————————\n'
 
         # execute the program
         ./a.out
+
+        # # remove the compiled program
+        # rm a.out
 
         # print it's finished
         echo $'—————————————————————————————————————————————————'
